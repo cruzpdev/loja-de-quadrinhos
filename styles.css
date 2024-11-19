@@ -1,0 +1,86 @@
+
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .menu ul {
+    display: flex;
+    gap: 1rem;
+}
+
+header .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.banner {
+    background: url('https://img.freepik.com/vetores-gratis/papel-de-parede-de-estilo-comico_79603-1248.jpg?t=st=1731981336~exp=1731984936~hmac=f7e54f41bf07850bb6451655dfcfd7f954466ac27aebfd64fe642d8ede5c530d&w=1380') no-repeat center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.produtos .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.produtos .card {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 1rem);
+}
+
+
+@media (max-width: 768px) {
+    .produtos .card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .produtos .card {
+        flex: 1 1 100%;
+    }
+
+    header .menu ul {
+        flex-direction: column;
+    }
+}
